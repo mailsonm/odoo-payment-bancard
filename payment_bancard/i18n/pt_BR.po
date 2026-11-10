@@ -1,0 +1,1367 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payment_bancard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260504\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-06 19:22+0000\n"
+"PO-Revision-Date: 2026-11-06 19:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.inline_form
+msgid ""
+"<i class=\"fa fa-credit-card me-1\"/> Tarjeta de Crédito / Débito (Infonet /"
+" Bancard)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.inline_form
+msgid "<i class=\"fa fa-mobile me-1\"/> Billetera Zimple"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.inline_form
+msgid "<i class=\"fa fa-qrcode me-1\"/> PIX Frontera (BRL → PYG)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_config.py:0
+msgid "API Key (Secreto JWT) no configurada para Caja POS 3.0."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_api_key
+msgid "API Key (Segredo JWT HS256)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid ""
+"Acceso denegado: No tiene permiso para acceder a tarjetas de otro cliente."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid ""
+"Acesso negado: Esta operação requer alçada de Gerente de Sucursal ou "
+"Administrador."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__active
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__active
+msgid "Activo"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Aguardando confirmação da Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_environment
+msgid "Ambiente Caja POS 3.0"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_qr_environment
+msgid "Ambiente VentasQR"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_qr_enabled
+msgid ""
+"Ativa a geração de QR Dinâmico Express da Bancard neste Ponto de Venda "
+"(permite rollout gradual iniciando pela filial piloto)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_enabled
+msgid ""
+"Ativa a integração direta com a maquininha física Bancard neste Ponto de "
+"Venda (Rollout gradual por filial piloto)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.ui.menu,name:payment_bancard.menu_bancard_pos_qr_transaction
+msgid "Auditoría Bancard QR"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.actions.act_window,name:payment_bancard.action_bancard_pos_qr_transaction
+msgid "Auditoría Bancard QR (PDV)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_transaction_form_bancard
+msgid "Auditoría Bancard vPOS 2.0"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.actions.act_window,name:payment_bancard.action_bancard_pos_cajapos_transaction
+#: model:ir.ui.menu,name:payment_bancard.menu_bancard_pos_cajapos_transaction
+msgid "Auditoría Caja POS 3.0"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__payment_provider__code__bancard
+msgid "Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:payment.provider,name:payment_bancard.payment_provider_bancard
+msgid "Bancard (vPOS 2.0 / PIX / QR)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_alias_token
+msgid "Bancard Alias Token"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_cajapos.js:0
+msgid "Bancard Caja POS"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_cajapos.js:0
+msgid "Bancard Caja POS 3.0"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Bancard Caja POS no retornó un token de transacción válido."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Bancard Caja POS: Respuesta no-JSON del servidor (HTTP %s)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_card_id
+msgid "Bancard Card ID"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_process_id
+msgid "Bancard Process ID"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_shop_process_id
+msgid "Bancard Shop Process ID"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid "Bancard Terminal Físico Caja POS 3.0 (Rollout Sucursal)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid "Bancard VentasQR Dinámico (Rollout Sucursal)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Bancard VentasQR no retornó un hook_alias válido."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Bancard VentasQR: Respuesta no-JSON del servidor (HTTP %s)."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Bancard Webhook: Payload inválido sin clave 'operation'."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid ""
+"Bancard: Divergencia de monto convertido a PYG (esperado %s, recibido %s)."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Bancard: Firma MD5 de confirmación inválida!"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Bancard: La API no retornó un process_id válido."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Bancard: Monto (amount) ausente en el payload de confirmación!"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "Bancard: Respuesta inválida (no-JSON) del servidor HTTP %s."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "Bancard: Tipo de operação desconhecido: %s"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Bancard: Token de confirmación ausente en el payload!"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_card_brand
+msgid "Bandeira do Cartão"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__cancelled
+msgid "Cancelado / Terminal Offline"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__payment_cancelled
+msgid "Cancelado por el Cliente en Terminal"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.inline_form
+msgid "Cargando formulario seguro Bancard vPOS 2.0..."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_card_masked_number
+msgid "Cartão Mascarado"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_qr_private_key
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_qr_private_key
+msgid "Chave Privada VentasQR"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_private_key
+msgid "Chave Privada vPOS (Private Key)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_qr_public_key
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_qr_public_key
+msgid "Chave Pública VentasQR"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_public_key
+msgid "Chave Pública vPOS (Public Key)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_qr_private_key
+msgid "Chave privada da API VentasQR."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_private_key
+msgid ""
+"Chave privada de 40 caracteres fornecida pela Bancard para geração de tokens"
+" MD5."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_qr_private_key
+msgid "Chave privada específica para a API VentasQR."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_qr_public_key
+msgid ""
+"Chave pública da API VentasQR (utilizada com prefixo apps/ no Basic Auth)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_public_key
+msgid "Chave pública de 32 caracteres fornecida pela Bancard para o vPOS 2.0."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_qr_public_key
+msgid ""
+"Chave pública específica para a API VentasQR (enviada com prefixo apps/ no "
+"Basic Auth)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_api_key
+msgid ""
+"Chave secreta compartilhada para assinar os tokens JWT via HMAC-SHA256."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__code
+msgid "Code"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_provider_form_bancard
+msgid "Colores del Formulario y Botón (Bancard Checkout v5.0.1)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_form
+msgid "Comprobante Bancard (Terminal)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Configuración de PDV no localizada para consultar la transacción %s."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Configuración de PDV no localizada para revertir el QR %s."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_qr_transaction__state__confirmed
+msgid "Confirmado (Pagado)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_transaction_form_bancard
+msgid "Consultar Confirmación Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Contacto inválido."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid "Container do formulário Bancard não encontrado na página."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_button_border_color
+msgid "Cor da Borda do Botão"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_button_background_color
+msgid "Cor de Fundo do Botão"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_form_background_color
+msgid "Cor de Fundo do Formulário"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_input_background_color
+msgid "Cor de Fundo dos Campos"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_input_placeholder_color
+msgid "Cor do Placeholder"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_button_text_color
+msgid "Cor do Texto do Botão"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_input_text_color
+msgid "Cor do Texto dos Campos"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__created
+msgid "Creada (Antes del Terminal)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__create_uid
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__create_date
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_config.py:0
+msgid ""
+"Credenciais Bancard VentasQR incompletas na configuração do PDV '%s'. "
+"Verifique Código de Comércio, Sucursal e Chaves VentasQR."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__payment_token__bancard_card_type__credit
+msgid "Crédito"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__installment_number
+msgid "Cuotas"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_branch_code
+msgid "Código da sucursal desta filial na Bancard (ex: 1, 2, etc.)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__authorization_code
+msgid "Código de Autorización"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_commerce_code
+msgid "Código de Comércio (VentasQR / Tpago)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_commerce_code
+msgid "Código de Comércio (commerceCode)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_commerce_code
+msgid "Código de Comércio Bancard (VentasQR)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__currency_code
+msgid "Código de Moneda ISO/Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_response_code
+msgid "Código de Resposta Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__response_code
+msgid "Código de Respuesta"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_branch_code
+msgid "Código de Sucursal Bancard (VentasQR)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_branch_code
+msgid "Código de Sucursal Padrão"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_config.py:0
+msgid "Código de comercio (commerceCode) no configurado para Caja POS 3.0."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_commerce_code
+msgid ""
+"Código de comércio fornecido pela Bancard para Caja POS (ex: ROSHKA-"
+"COMMERCE-TEST)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__merchant_code
+msgid "Código del Comercio (Bancard)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__pos_code
+msgid "Código del Terminal POS Físico (posCode)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_config.py:0
+msgid "Código del Terminal POS Físico (posCode) no configurado en este PDV."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_pos_code
+msgid "Código do Terminal POS Físico (posCode)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_commerce_code
+msgid "Código do comércio fornecido pela Bancard (ex: 7851)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_commerce_code
+msgid "Código identificador do comércio na Bancard para QR Dinâmico no PDV."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_branch_code
+msgid "Código padrão da sucursal cadastrada na Bancard para QR Dinâmico."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_pos_code
+msgid ""
+"Código único da maquininha física instalada neste caixa (ex: pos2342 ou "
+"p652000010658)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_card_expiration_date
+msgid "Data de Validade"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_qr_transaction_form
+msgid "Datos Técnicos del QR Express"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_form
+msgid "Datos de la Operación en el PDV"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_base_url
+msgid "Deixe em branco para usar a URL padrão do ambiente selecionado."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__description
+msgid "Descripción"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__payment_description
+msgid "Descripción del Método de Pago"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_extended_description
+msgid "Descrição Estendida"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_response_description
+msgid "Descrição da Resposta"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__display_name
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_payment_method__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_form
+msgid "Dispositivo y Auditoría Técnica"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__payment_token__bancard_card_type__debit
+msgid "Débito"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid ""
+"El monto del cobro en la terminal Bancard en PYG debe ser mayor a cero."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "El monto del cobro vía Bancard QR en PYG debe ser mayor a cero."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid ""
+"El terminal Bancard VentasQR no está habilitado para esta sucursal/PDV. "
+"Active 'Habilitar Bancard VentasQR' en los ajustes del Punto de Venta."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid "Erro Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_qr.js:0
+msgid "Erro Bancard VentasQR"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid "Erro ao inicializar Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_qr_transaction__state__error
+msgid "Error"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Error Bancard Caja POS: %s"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Error Bancard VentasQR: %s"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__error
+msgid "Error de Comunicación"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "Error en la comunicación con Bancard: %s"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "Error en la solicitud a Bancard: %s"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_qr_transaction__state__pending
+msgid "Esperando Lectura / Pago"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__payment_pending
+msgid "Esperando Pagador en Terminal"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__state
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__state
+msgid "Estado"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid "Falha ao carregar biblioteca JS da Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Fallo de conexión con la API Bancard Caja POS: %s"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "Fallo de conexión con la API Bancard VentasQR: %s"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__date_time
+msgid "Fecha/Hora de la Transacción (Terminal)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid ""
+"Habilita el envío automático de cobros a la terminal física Bancard de esta "
+"caja (API REST Caja POS 3.0)."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid ""
+"Habilita la generación de QR Express dinámico en la pantalla de esta caja "
+"POS (API VentasQR v1.2). Permite activación controlada por sucursal/PDV en "
+"fase piloto."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_enabled
+msgid "Habilitar Bancard Caja POS 3.0 (Terminal Físico)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_qr_enabled
+msgid "Habilitar Bancard VentasQR (Rollout Filial)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__bancard_enable_pix
+msgid "Habilitar PIX (Fronteira BRL -> PYG)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__name
+msgid "Hook Alias (Bancard QR)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__id
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__id
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_provider__id
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__id
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__id
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__id
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_payment_method__id
+msgid "ID"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__issuer_id
+msgid "ID del Emisor"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__pos_code
+msgid "Identificador de la terminal física Bancard configurada en esta caja."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_provider_id
+msgid ""
+"Identificador do provedor na Bancard. Deve conter exatamente 4 dígitos (ex: "
+"0001)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_transaction__bancard_shop_process_id
+msgid "Identificador numérico único enviado à Bancard (shop_process_id)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_qr_transaction__name
+msgid ""
+"Identificador único (hook_alias) generado por el endpoint generate-qr-"
+"express de Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_print_voucher
+msgid "Imprimir Comprovante no Terminal POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_security_info
+msgid "Informação de Segurança Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid ""
+"La integración Bancard Caja POS 3.0 no está habilitada para esta "
+"sucursal/PDV. Active 'Habilitar Bancard Caja POS 3.0' en los ajustes del "
+"Punto de Venta."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.actions.act_window,help:payment_bancard.action_bancard_pos_cajapos_transaction
+msgid ""
+"Las transacciones enviadas directamente a las terminales físicas de tarjeta "
+"en el mostrador aparecerán aquí con estado en tiempo real."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__write_uid
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__write_date
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid ""
+"Límite alcanzado: Ya posee el máximo de 5 tarjetas registradas en Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__response_message
+msgid "Mensaje de Respuesta"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__device_model
+msgid "Modelo del POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__amount_buy
+msgid "Monto Cobrado"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__amount
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__amount
+msgid "Monto en PYG (Guaraníes)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_qr_transaction__amount
+msgid "Monto entero en Guaraníes cobrado en el QR Express."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__amount
+msgid ""
+"Monto entero en Guaraníes sin decimales enviado para cobro en la terminal."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__payment_method_id
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__payment_method_id
+msgid "Método de Pago POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.actions.act_window,help:payment_bancard.action_bancard_pos_cajapos_transaction
+msgid "Ninguna transacción de Bancard Caja POS 3.0 registrada."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "No fue posible conectar con el servidor de Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "No fue posible revertir la transacción en Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__cardholder_name
+msgid "Nombre del Tarjetahabiente"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_cajapos.js:0
+msgid "Não foi possível enviar a cobrança para o terminal POS Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_qr.js:0
+msgid "Não foi possível gerar o QR Express da Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid ""
+"Não foi possível obter o identificador de sessão (process_id) da Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__authorization_number
+msgid "Número de Autorización"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_authorization_number
+msgid "Número de Autorização"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__ticket_number
+msgid "Número de Boleta (ticketNumber)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__ticket_number
+msgid "Número de Boleta / Ticket"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__bill_number
+msgid "Número de Factura / Comprobante ERP"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__device_serial
+msgid "Número de Serie del POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_ticket_number
+msgid "Número de Ticket"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__bill_number
+msgid "Número de la factura o pedido enviado a la terminal física."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/interactions/payment_form.js:0
+msgid "Objeto global Bancard.Checkout indisponível."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Pagamento recusado"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_is_pix
+msgid "Pagar com PIX (Fronteira)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_is_zimple
+msgid "Pagar com Zimple"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__payment_confirmed
+msgid "Pago Confirmado"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Pago cancelado por el usuario."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_transaction__bancard_promotions
+msgid "Parâmetro adicional de promoções (ex: 027VS ORO000045)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__response_payload
+msgid "Payload Completo de Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_form
+msgid "Payload Crudo de la API Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__qr_data
+msgid "Payload EMVCo QR"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__response_payload
+msgid "Payload de Confirmación / Auditoría"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_payment_provider
+msgid "Payment Provider"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_payment_token
+msgid "Payment Token"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_payment_transaction
+msgid "Payment Transaction"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__bancard_enable_pix
+msgid ""
+"Permite pagamentos via PIX Online pela Bancard com conversão automática de "
+"BRL para PYG."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_provider_form_bancard
+msgid "Personalización de Bancard Iframe"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_transaction__bancard_process_id
+msgid ""
+"Process ID retornado pelo Bancard single_buy ou charge para renderização do "
+"iframe."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__pos_config__bancard_cajapos_environment__production
+#: model:ir.model.fields.selection,name:payment_bancard.selection__pos_config__bancard_qr_environment__production
+msgid "Produção"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/bancard_pos_qr_transaction.py:0
+msgid ""
+"Prohibido eliminar físicamente transacciones Bancard QR. Utilice el archivo "
+"lógico (active=False)."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_promotions
+msgid "Promoções Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Proveedor Bancard no encontrado."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__provider_id
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_provider_id
+msgid "Provider ID (4 dígitos)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__pos_config_id
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__pos_config_id
+msgid "Punto de Venta (Sucursal)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_cajapos_transaction__state__payment_rejected
+msgid "Rechazado por Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Revertida vía Rollback Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_qr_transaction__state__revert_requested
+msgid "Revertido / Expirado en Caja"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__bancard_pos_qr_transaction__state__reverted
+msgid "Revertido en Bancard"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_transaction_form_bancard
+msgid "Revertir (Rollback Bancard)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_pos_config__bancard_cajapos_print_voucher
+msgid ""
+"Se marcado, a maquininha física imprime o cupom diretamente após aprovação "
+"da transação."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__pos_session_id
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__pos_session_id
+msgid "Sesión de Caja"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_qr_transaction__active
+msgid ""
+"Soft Delete universal conforme a las reglas de seguridad de Farmacia "
+"Americana."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__active
+msgid "Soft delete: desactive el registro en lugar de eliminarlo físicamente."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__pos_config__bancard_qr_environment__test
+msgid "Staging / Homologação (:8888)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields.selection,name:payment_bancard.selection__pos_config__bancard_cajapos_environment__test
+msgid "Staging / QA (:8888 ou Host Teste)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__read_type
+msgid ""
+"T = Tarjeta (chip/aproximación/banda), B = Billetera móvil, QR = QR en "
+"pantalla de la terminal."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_provider__code
+msgid "The technical code of this payment provider."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_provider.py:0
+msgid "Tiempo límite agotado al conectar con Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_token__bancard_card_type
+msgid "Tipo de Cartão"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__account_type
+msgid "Tipo de Cuenta"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__read_type
+msgid "Tipo de Lectura (T=Tarjeta, B=Billetera, QR=QR)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__tx_type
+msgid "Tipo de Transacción"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__name
+msgid "Token de la Transacción (txToken)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_token__bancard_alias_token
+msgid "Token temporário/alias da Bancard para cobranças 1-click e exclusão."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_bancard_pos_cajapos_transaction__name
+msgid ""
+"Token único identificador retornado por el endpoint /v1/external/pos/venta "
+"de Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_list
+msgid "Transacciones Bancard Caja POS 3.0"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_qr_transaction_list
+msgid "Transacciones Bancard QR en el PDV"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_cajapos_transaction_form
+msgid "Transacción Bancard Caja POS 3.0"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_bancard_pos_cajapos_transaction
+msgid "Transacción Bancard Caja POS 3.0 en PDV (Terminal Físico / Pinpad)"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.bancard_pos_qr_transaction_form
+msgid "Transacción Bancard QR en el PDV"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model,name:payment_bancard.model_bancard_pos_qr_transaction
+msgid "Transacción Bancard VentasQR en PDV (Odoo 19)"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Transacción Bancard no encontrada."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/controllers/main.py:0
+msgid "Transacción o tarjeta no encontrada."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-javascript
+#: code:addons/payment_bancard/static/src/app/utils/payment/payment_bancard_cajapos.js:0
+msgid "Transação não aprovada no terminal Bancard (%s)."
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/payment_transaction.py:0
+msgid "Transação revertida (rollback) na Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_pos_config__bancard_cajapos_base_url
+msgid "URL Base Customizada Caja POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__qr_image_url
+msgid "URL de la Imagen QR (PNG)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__pos_order_uuid
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_qr_transaction__pos_order_uuid
+msgid "UUID del Pedido POS"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_payment_transaction__bancard_pyg_amount
+msgid "Valor Convertido em PYG"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,help:payment_bancard.field_payment_transaction__bancard_pyg_amount
+msgid ""
+"Valor efetivamente enviado à Bancard em Guaraníes (PYG) após conversão "
+"cambial."
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__device_version
+msgid "Versión de la Aplicación (Hermes/Iris)"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__amount_change
+msgid "Vuelto"
+msgstr "Vuelto"
+
+#. module: payment_bancard
+#: model_terms:payment.provider,auth_msg:payment_bancard.payment_provider_bancard
+msgid "Your payment has been authorized."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:payment.provider,cancel_msg:payment_bancard.payment_provider_bancard
+msgid "Your payment has been cancelled."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:payment.provider,pending_msg:payment_bancard.payment_provider_bancard
+msgid "Your payment has been processed but is waiting for approval."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:payment.provider,done_msg:payment_bancard.payment_provider_bancard
+msgid "Your payment has been processed."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid "ej: pos2342 o p652000010658"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_payment_method.py:0
+msgid "hook_alias es obligatorio para revertir el QR Bancard."
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.pos_config_view_form_inherit_bancard_qr
+msgid "https://cajapos-qa.bancard.com.py"
+msgstr ""
+
+#. module: payment_bancard
+#. odoo-python
+#: code:addons/payment_bancard/models/pos_config.py:0
+msgid ""
+"providerId debe contener exactamente 4 dígitos numéricos (regex: ^\\d{4}$). "
+"Valor actual: '%s'"
+msgstr ""
+
+#. module: payment_bancard
+#: model_terms:ir.ui.view,arch_db:payment_bancard.payment_transaction_form_bancard
+msgid "¿Confirma la reversión (Rollback) de esta transacción en Bancard?"
+msgstr ""
+
+#. module: payment_bancard
+#: model:ir.model.fields,field_description:payment_bancard.field_bancard_pos_cajapos_transaction__card_last_numbers
+msgid "Últimos 4 Dígitos de la Tarjeta"
+msgstr ""

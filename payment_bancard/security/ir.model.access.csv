@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bancard_pos_qr_tx_pos_user,bancard.pos.qr.transaction.pos.user,model_bancard_pos_qr_transaction,point_of_sale.group_pos_user,1,1,1,0
+access_bancard_pos_qr_tx_pos_manager,bancard.pos.qr.transaction.pos.manager,model_bancard_pos_qr_transaction,point_of_sale.group_pos_manager,1,1,1,0
+access_bancard_pos_qr_tx_system,bancard.pos.qr.transaction.system,model_bancard_pos_qr_transaction,base.group_system,1,1,1,0
+access_bancard_pos_cajapos_tx_pos_user,bancard.pos.cajapos.transaction.pos.user,model_bancard_pos_cajapos_transaction,point_of_sale.group_pos_user,1,1,1,0
+access_bancard_pos_cajapos_tx_pos_manager,bancard.pos.cajapos.transaction.pos.manager,model_bancard_pos_cajapos_transaction,point_of_sale.group_pos_manager,1,1,1,0
+access_bancard_pos_cajapos_tx_system,bancard.pos.cajapos.transaction.system,model_bancard_pos_cajapos_transaction,base.group_system,1,1,1,0

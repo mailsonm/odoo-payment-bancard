@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bancard_pos_qr_transaction_list" model="ir.ui.view">
+        <field name="name">bancard.pos.qr.transaction.list</field>
+        <field name="model">bancard.pos.qr.transaction</field>
+        <field name="arch" type="xml">
+            <list string="Transacciones Bancard QR en el PDV" create="false">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="pos_config_id"/>
+                <field name="pos_session_id"/>
+                <field name="amount"/>
+                <field name="authorization_number"/>
+                <field name="ticket_number"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'confirmed'"
+                       decoration-warning="state == 'pending'"
+                       decoration-danger="state in ('revert_requested', 'reverted', 'error')"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="bancard_pos_qr_transaction_form" model="ir.ui.view">
+        <field name="name">bancard.pos.qr.transaction.form</field>
+        <field name="model">bancard.pos.qr.transaction</field>
+        <field name="arch" type="xml">
+            <form string="Transacción Bancard QR en el PDV" create="false" edit="false">
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="pos_config_id"/>
+                            <field name="pos_session_id"/>
+                            <field name="payment_method_id"/>
+                            <field name="pos_order_uuid"/>
+                        </group>
+                        <group>
+                            <field name="amount"/>
+                            <field name="description"/>
+                            <field name="authorization_number"/>
+                            <field name="ticket_number"/>
+                            <field name="create_date"/>
+                        </group>
+                    </group>
+                    <separator string="Datos Técnicos del QR Express"/>
+                    <group>
+                        <field name="qr_image_url" widget="url"/>
+                        <field name="qr_data"/>
+                        <field name="response_payload"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_bancard_pos_qr_transaction" model="ir.actions.act_window">
+        <field name="name">Auditoría Bancard QR (PDV)</field>
+        <field name="res_model">bancard.pos.qr.transaction</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_bancard_pos_qr_transaction"
+              name="Auditoría Bancard QR"
+              parent="point_of_sale.menu_point_of_sale"
+              action="action_bancard_pos_qr_transaction"
+              groups="point_of_sale.group_pos_manager"
+              sequence="95"/>
+
+</odoo>

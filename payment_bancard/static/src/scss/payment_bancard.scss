@@ -1,0 +1,12 @@
+.o_bancard_inline_container {
+    padding: 0.75rem 0;
+
+    .o_bancard_iframe_wrapper {
+        transition: all 0.2s ease-in-out;
+        iframe {
+            width: 100%;
+            min-height: 340px;
+            border: none;
+        }
+    }
+}

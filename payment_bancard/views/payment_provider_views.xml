@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_provider_form_bancard" model="ir.ui.view">
+        <field name="name">payment.provider.form.bancard</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position="inside">
+                <group invisible="code != 'bancard'">
+                    <field name="bancard_public_key" required="code == 'bancard' and state != 'disabled'"/>
+                    <field name="bancard_private_key" required="code == 'bancard' and state != 'disabled'" password="True"/>
+                    <field name="bancard_enable_pix"/>
+                    <field name="bancard_commerce_code"/>
+                    <field name="bancard_branch_code"/>
+                    <field name="bancard_qr_public_key"/>
+                    <field name="bancard_qr_private_key" password="True"/>
+                </group>
+            </group>
+            <notebook position="inside">
+                <page string="Personalización de Bancard Iframe" name="bancard_styles" invisible="code != 'bancard'">
+                    <separator string="Colores del Formulario y Botón (Bancard Checkout v5.0.1)"/>
+                    <group>
+                        <group>
+                            <field name="bancard_form_background_color" widget="color"/>
+                            <field name="bancard_button_background_color" widget="color"/>
+                            <field name="bancard_button_text_color" widget="color"/>
+                            <field name="bancard_button_border_color" widget="color"/>
+                        </group>
+                        <group>
+                            <field name="bancard_input_background_color" widget="color"/>
+                            <field name="bancard_input_text_color" widget="color"/>
+                            <field name="bancard_input_placeholder_color" widget="color"/>
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+</odoo>

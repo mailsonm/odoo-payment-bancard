@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bancard_pos_cajapos_transaction_list" model="ir.ui.view">
+        <field name="name">bancard.pos.cajapos.transaction.list</field>
+        <field name="model">bancard.pos.cajapos.transaction</field>
+        <field name="arch" type="xml">
+            <list string="Transacciones Bancard Caja POS 3.0" create="false">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="pos_config_id"/>
+                <field name="pos_code"/>
+                <field name="bill_number"/>
+                <field name="amount"/>
+                <field name="card_last_numbers"/>
+                <field name="authorization_code"/>
+                <field name="ticket_number"/>
+                <field name="read_type"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'payment_confirmed'"
+                       decoration-warning="state in ('payment_pending', 'created')"
+                       decoration-danger="state in ('payment_rejected', 'payment_cancelled', 'cancelled', 'error')"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="bancard_pos_cajapos_transaction_form" model="ir.ui.view">
+        <field name="name">bancard.pos.cajapos.transaction.form</field>
+        <field name="model">bancard.pos.cajapos.transaction</field>
+        <field name="arch" type="xml">
+            <form string="Transacción Bancard Caja POS 3.0" create="false" edit="false">
+                <header>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="created,payment_pending,payment_confirmed,payment_rejected,payment_cancelled"/>
+                </header>
+                <sheet>
+                    <separator string="Datos de la Operación en el PDV"/>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="pos_config_id"/>
+                            <field name="pos_session_id"/>
+                            <field name="payment_method_id"/>
+                            <field name="pos_order_uuid"/>
+                        </group>
+                        <group>
+                            <field name="bill_number"/>
+                            <field name="pos_code"/>
+                            <field name="provider_id"/>
+                            <field name="amount"/>
+                            <field name="create_date"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Comprobante Bancard (Terminal)">
+                            <group>
+                                <group>
+                                    <field name="ticket_number"/>
+                                    <field name="authorization_code"/>
+                                    <field name="date_time"/>
+                                    <field name="amount_buy"/>
+                                    <field name="amount_change"/>
+                                    <field name="installment_number"/>
+                                </group>
+                                <group>
+                                    <field name="card_last_numbers"/>
+                                    <field name="cardholder_name"/>
+                                    <field name="read_type"/>
+                                    <field name="payment_description"/>
+                                    <field name="response_code"/>
+                                    <field name="response_message"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Dispositivo y Auditoría Técnica">
+                            <group>
+                                <group>
+                                    <field name="device_model"/>
+                                    <field name="device_serial"/>
+                                    <field name="device_version"/>
+                                </group>
+                                <group>
+                                    <field name="merchant_code"/>
+                                    <field name="issuer_id"/>
+                                    <field name="account_type"/>
+                                </group>
+                            </group>
+                            <separator string="Payload Crudo de la API Bancard"/>
+                            <field name="response_payload"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_bancard_pos_cajapos_transaction" model="ir.actions.act_window">
+        <field name="name">Auditoría Caja POS 3.0</field>
+        <field name="res_model">bancard.pos.cajapos.transaction</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Ninguna transacción de Bancard Caja POS 3.0 registrada.
+            </p>
+            <p>
+                Las transacciones enviadas directamente a las terminales físicas de tarjeta en el mostrador aparecerán aquí con estado en tiempo real.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_bancard_pos_cajapos_transaction"
+              name="Auditoría Caja POS 3.0"
+              parent="point_of_sale.menu_point_of_sale"
+              action="action_bancard_pos_cajapos_transaction"
+              sequence="105"/>
+
+</odoo>

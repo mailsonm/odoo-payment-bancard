@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_transaction_form_bancard" model="ir.ui.view">
+        <field name="name">payment.transaction.form.bancard</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.payment_transaction_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_bancard_query_confirmation"
+                        type="object"
+                        string="Consultar Confirmación Bancard"
+                        class="btn-secondary"
+                        invisible="provider_code != 'bancard'"
+                        groups="base.group_system"/>
+                <button name="action_bancard_rollback"
+                        type="object"
+                        string="Revertir (Rollback Bancard)"
+                        class="btn-warning"
+                        invisible="provider_code != 'bancard' or state == 'cancel'"
+                        confirm="¿Confirma la reversión (Rollback) de esta transacción en Bancard?"
+                        groups="base.group_system"/>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <separator string="Auditoría Bancard vPOS 2.0" invisible="provider_code != 'bancard'"/>
+                <group invisible="provider_code != 'bancard'">
+                    <group>
+                        <field name="bancard_shop_process_id"/>
+                        <field name="bancard_process_id"/>
+                        <field name="bancard_authorization_number"/>
+                        <field name="bancard_ticket_number"/>
+                        <field name="bancard_pyg_amount"/>
+                    </group>
+                    <group>
+                        <field name="bancard_response_code"/>
+                        <field name="bancard_response_description"/>
+                        <field name="bancard_extended_description"/>
+                        <field name="bancard_is_pix"/>
+                        <field name="bancard_is_zimple"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

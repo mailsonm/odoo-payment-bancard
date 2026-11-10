@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pos_config_view_form_inherit_bancard_qr" model="ir.ui.view">
+        <field name="name">pos.config.form.inherit.bancard.qr</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='configuration']/div[hasclass('o_settings_container')]" position="inside">
+                <setting string="Bancard VentasQR Dinámico (Rollout Sucursal)"
+                         help="Habilita la generación de QR Express dinámico en la pantalla de esta caja POS (API VentasQR v1.2). Permite activación controlada por sucursal/PDV en fase piloto.">
+                    <field name="bancard_qr_enabled"/>
+                    <div class="content-group mt16" invisible="not bancard_qr_enabled">
+                        <div class="row mt8">
+                            <label for="bancard_qr_environment" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_qr_environment"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_commerce_code" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_commerce_code" required="bancard_qr_enabled"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_branch_code" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_branch_code" required="bancard_qr_enabled"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_qr_public_key" class="col-lg-4 o_light_label" groups="base.group_system"/>
+                            <field name="bancard_qr_public_key" groups="base.group_system"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_qr_private_key" class="col-lg-4 o_light_label" groups="base.group_system"/>
+                            <field name="bancard_qr_private_key" password="True" groups="base.group_system"/>
+                        </div>
+                    </div>
+                </setting>
+                <setting string="Bancard Terminal Físico Caja POS 3.0 (Rollout Sucursal)"
+                         help="Habilita el envío automático de cobros a la terminal física Bancard de esta caja (API REST Caja POS 3.0).">
+                    <field name="bancard_cajapos_enabled"/>
+                    <div class="content-group mt16" invisible="not bancard_cajapos_enabled">
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_environment" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_environment"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_base_url" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_base_url" placeholder="https://cajapos-qa.bancard.com.py"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_commerce_code" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_commerce_code" required="bancard_cajapos_enabled"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_pos_code" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_pos_code" required="bancard_cajapos_enabled" placeholder="ej: pos2342 o p652000010658"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_provider_id" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_provider_id" required="bancard_cajapos_enabled" placeholder="0001"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_api_key" class="col-lg-4 o_light_label" groups="base.group_system"/>
+                            <field name="bancard_cajapos_api_key" password="True" groups="base.group_system"/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="bancard_cajapos_print_voucher" class="col-lg-4 o_light_label"/>
+                            <field name="bancard_cajapos_print_voucher"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

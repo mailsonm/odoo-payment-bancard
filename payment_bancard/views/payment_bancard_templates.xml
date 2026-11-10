@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="inline_form" name="Bancard: Formulario Inline vPOS 2.0">
+        <div t-attf-id="bancard-inline-container-{{provider_id}}" class="o_bancard_inline_container">
+            <div class="mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bancard-payment-mode" type="radio"
+                           t-attf-name="bancard_mode_{{provider_id}}"
+                           t-attf-id="bancard_mode_card_{{provider_id}}"
+                           value="card" checked="checked"/>
+                    <label class="form-check-label" t-attf-for="bancard_mode_card_{{provider_id}}">
+                        <i class="fa fa-credit-card me-1"/> Tarjeta de Crédito / Débito (Infonet / Bancard)
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bancard-payment-mode" type="radio"
+                           t-attf-name="bancard_mode_{{provider_id}}"
+                           t-attf-id="bancard_mode_pix_{{provider_id}}"
+                           value="pix"/>
+                    <label class="form-check-label" t-attf-for="bancard_mode_pix_{{provider_id}}">
+                        <i class="fa fa-qrcode me-1"/> PIX Frontera (BRL &#8594; PYG)
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bancard-payment-mode" type="radio"
+                           t-attf-name="bancard_mode_{{provider_id}}"
+                           t-attf-id="bancard_mode_zimple_{{provider_id}}"
+                           value="zimple"/>
+                    <label class="form-check-label" t-attf-for="bancard_mode_zimple_{{provider_id}}">
+                        <i class="fa fa-mobile me-1"/> Billetera Zimple
+                    </label>
+                </div>
+            </div>
+
+            <div t-attf-id="bancard-iframe-container-{{provider_id}}"
+                 class="o_bancard_iframe_wrapper d-none"
+                 style="min-height: 360px; width: 100%; border: 1px solid #dee2e6; border-radius: 8px; padding: 15px; background: #fff;">
+                <div class="text-center py-4 bancard-loading">
+                    <i class="fa fa-spinner fa-spin fa-2x text-primary"/>
+                    <p class="mt-2 text-muted">Cargando formulario seguro Bancard vPOS 2.0...</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="redirect_form" name="Bancard: Redirect Form">
+        <form t-att-action="api_url" method="get">
+            <input type="hidden" name="process_id" t-att-value="bancard_process_id"/>
+        </form>
+    </template>
+
+</odoo>
